@@ -1,0 +1,215 @@
+{
+  "divisionmodels": [
+    {
+      "division": "D-1",
+      "section_code": "sc-1",
+      "section_name": "sn-1",
+      "id": 1
+    },
+    {
+      "division": "D-2",
+      "section_code": "sc-2",
+      "section_name": "sn-2",
+      "id": 2
+    },
+    {
+      "division": "D-3",
+      "section_code": "sc-3",
+      "section_name": "sn-3",
+      "id": 3
+    },
+    {
+      "division": "D-4",
+      "section_code": "sc-4",
+      "section_name": "sn-4",
+      "id": 4
+    }
+  ],
+  "villages": [
+    {
+      "division_id": 1,
+      "village_name": "vn-1",
+      "village_code": "vc-1",
+      "id": 1
+    },
+    {
+      "division_id": 2,
+      "village_name": "vn-22",
+      "village_code": "vc-2",
+      "id": 2
+    },
+    {
+      "division_id": 3,
+      "village_name": "vn-3",
+      "village_code": "vc-3",
+      "id": 3
+    },
+    {
+      "division_id": 4,
+      "village_name": "vn-4",
+      "village_code": "vc-4",
+      "id": 4
+    },
+    {
+      "division_id": "3",
+      "village_name": "vn-5",
+      "village_code": "vc-5",
+      "id": 5
+    },
+    {
+      "division_id": "2",
+      "village_name": "vn-6",
+      "village_code": "vc-6",
+      "id": 6
+    },
+    {
+      "division_id": "3",
+      "village_name": "vn-7",
+      "village_code": "vc-7",
+      "id": 7
+    },
+    {
+      "division_id": "2",
+      "village_name": "vn-8",
+      "village_code": "vc-8",
+      "id": 8
+    },
+    {
+      "division_id": "1",
+      "village_name": "vn-9",
+      "village_code": "vc-9",
+      "id": 10
+    }
+  ],
+  "farmers": [
+    {
+      "csi_code": 1,
+      "rno": "rno-1",
+      "sysno": "sysno-1",
+      "village_id": 2,
+      "csi_name": "csi-1",
+      "litrary_status": "lts-1",
+      "City": "cty-1",
+      "person_id": 1,
+      "id": 1
+    },
+    {
+      "csi_code": 2,
+      "rno": "rno-2",
+      "sysno": "sysno-2",
+      "village_id": 3,
+      "csi_name": "csi-2",
+      "litrary_status": "lts-2",
+      "City": "cty-2",
+      "person_id": 2,
+      "id": 2
+    },
+    {
+      "csi_code": 3,
+      "rno": "rno-3",
+      "sysno": "sysno-3",
+      "village_id": 3,
+      "csi_name": "csi-3",
+      "litrary_status": "lts-3",
+      "City": "cty-3",
+      "person_id": 5,
+      "id": 3
+    },
+    {
+      "csi_code": 4,
+      "rno": "rno-4",
+      "sysno": "sysno-4",
+      "village_id": 6,
+      "csi_name": "csi-4",
+      "litrary_status": "lts-4",
+      "City": "Cty-4",
+      "person_id": 4,
+      "id": 4
+    }
+  ],
+  "landvillages": [
+    {
+      "land_village_code": "lvc-1",
+      "land_village": "lv-1",
+      "village_id": "7",
+      "plot_no": "plno-1",
+      "distance": "1 km",
+      "east": "e-1",
+      "west": "w-1",
+      "north": "n-1",
+      "south": "s-1",
+      "id": 1
+    },
+    {
+      "land_village_code": "lvc-2",
+      "land_village": "lv-2",
+      "village_id": "2",
+      "plot_no": "plno-2",
+      "distance": "2 km",
+      "east": "e-2",
+      "west": "w-2",
+      "north": "n-2",
+      "south": "s-2",
+      "id": 2
+    },
+    {
+      "land_village_code": "lvc-3",
+      "land_village": "lv-3",
+      "village_id": "3",
+      "plot_no": "plno-2",
+      "distance": "3 km",
+      "east": "e-3",
+      "west": "w-3",
+      "north": "n-3",
+      "south": "s-3",
+      "id": 3
+    }
+  ],
+  "applicationtreatments": [
+    {
+      "date": "2019-04-13",
+      "application_treatment": "lv-1",
+      "farmer_land_village_id": "2",
+      "applied": "apl-1",
+      "ssp": "ssp-1",
+      "mcp": "mcp-1",
+      "id": 1
+    },
+    {
+      "date": "2019-04-26",
+      "application_treatment": "lv-2",
+      "farmer_land_village_id": "3",
+      "applied": "appl-2",
+      "ssp": "ssp-2",
+      "mcp": "mcp-2",
+      "id": 2
+    },
+    {
+      "date": "2019-04-13",
+      "application_treatment": "lv-3",
+      "farmer_land_village_id": "2",
+      "applied": "aapl-3",
+      "ssp": "ssp-3",
+      "mcp": "mcp-3",
+      "id": 3
+    },
+    {
+      "date": "2019-04-06",
+      "application_treatment": "lv-4",
+      "farmer_land_village_id": "2",
+      "applied": "appl-4",
+      "ssp": "ssp-4",
+      "mcp": "mcp-4",
+      "id": 4
+    },
+    {
+      "date": "2019-04-07",
+      "application_treatment": "lv-5",
+      "farmer_land_village_id": "1",
+      "applied": "appl-5",
+      "ssp": "ssp-5",
+      "mcp": "mcp-5",
+      "id": 5
+    }
+  ]
+}
