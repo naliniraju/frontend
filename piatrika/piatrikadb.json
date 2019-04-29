@@ -125,6 +125,18 @@
       "City": "Cty-4",
       "person_id": 4,
       "id": 4
+    },
+    {
+      "csi_code": 1,
+      "rno": "kjkh",
+      "sysno": "hjhjh",
+      "village_id": "7",
+      "csi_name": "hjkh",
+      "litrary_status": "hjhjkh",
+      "City": "hkjhkjhkjh",
+      "person_id": 3,
+      "ryot_photo": "C:\\fakepath\\Screenshot (1).png",
+      "id": 5
     }
   ],
   "landvillages": [
@@ -210,6 +222,160 @@
       "ssp": "ssp-5",
       "mcp": "mcp-5",
       "id": 5
+    }
+  ],
+  "seasons": [
+    {
+      "Farmers_id": "3",
+      "land_village_id": "2",
+      "season_start": "2019-04-01",
+      "extent": "ext-1",
+      "expected_planting": "2019-04-28",
+      "expected_harvesting": "2019-04-01",
+      "current_variety": "cv-1",
+      "previous_variety": "pv-1",
+      "plant_type": "pt-1",
+      "total_acres": "ta-1",
+      "measurement_acres": "ma-1",
+      "estimated_yield": "ey-1",
+      "applied": "app-1",
+      "offer_no": "offer-1",
+      "offer_date": "2019-04-19",
+      "agreement_date": "2019-04-27",
+      "agreement_acre": 10,
+      "agreement_tonne": 9,
+      "id": 1
+    },
+    {
+      "season_start": "2019-04-13",
+      "expected_harvesting": "2019-05-11",
+      "Farmers_id": "2",
+      "current_variety": "cv-2",
+      "plant_type": "pt-2",
+      "measurement_acres": "ma-2",
+      "estimated_yield": "ey-2",
+      "applied": "app-2",
+      "offer_date": "2019-04-27",
+      "agreement_acre": 20,
+      "agreement_tonne": 18,
+      "agreement_date": "2019-05-02",
+      "offer_no": "ono-2",
+      "total_acres": "20",
+      "previous_variety": "pv-2",
+      "land_village_id": "3",
+      "expected_planting": "2019-04-20",
+      "extent": "ext-2",
+      "id": 2
+    }
+  ],
+  "loans": [
+    {
+      "sb_acno": "sb-acn0-1",
+      "loan_no": "loan-no-1",
+      "Farmers_id": "5",
+      "loan_ac_Farmers_id": "lald-1",
+      "folio_no": "fno-1",
+      "loan_ac_folio_no": "lacfno-1",
+      "id": 1,
+      "ledger_no": "lg-no-1",
+      "loan_ac_ledger_no": "laln-1",
+      "payment_mode": "pm-1"
+    },
+    {
+      "sb_acno": "sb-ac-2",
+      "loan_no": "la-no-2",
+      "ledger_no": "le-n0-2",
+      "loan_ac_ledger_no": "laln-2",
+      "folio_no": "f-no-2",
+      "loan_ac_folio_no": "lafn-2",
+      "Farmers_id": "2",
+      "id": 2,
+      "payment_mode": "pm-2"
+    }
+  ],
+  "banks": [
+    {
+      "bank": "Icici",
+      "branch_address": "Madhapur",
+      "bank_code": "007",
+      "id": 1
+    },
+    {
+      "bank": "Hdfc",
+      "branch_address": "Jubli Hills",
+      "bank_code": "008",
+      "id": 2
+    },
+    {
+      "bank": "Axis",
+      "branch_address": "Banjara Hills",
+      "bank_code": "009",
+      "id": 3
+    }
+  ],
+  "farmerbanks": [
+    {
+      "account_no": "acc-n0-1",
+      "Farmers_id": "5",
+      "bank_id": "2",
+      "id": 1
+    },
+    {
+      "account_no": "acc-n0-2",
+      "Farmers_id": "4",
+      "bank_id": "1",
+      "id": 2
+    },
+    {
+      "account_no": "acc-n0-3",
+      "Farmers_id": "5",
+      "bank_id": "3",
+      "id": 3
+    }
+  ],
+  "persons": [
+    {
+      "first_name": "Nalini",
+      "middle_name": "Raju",
+      "last_name": "Suraparaju",
+      "address": "Tirupathi",
+      "city": "Andhra Pradesh",
+      "email": "naliniraju@gmail.com",
+      "id": 1
+    },
+    {
+      "first_name": "Rajasekhar",
+      "middle_name": "Reddy",
+      "last_name": "Suravarapu",
+      "address": "Madhapur",
+      "city": "Hyderabad",
+      "email": "rajaselhar@gmail.com",
+      "id": 2
+    },
+    {
+      "first_name": "Amarendra",
+      "middle_name": "Naidu",
+      "last_name": "Naravari",
+      "address": "HSR Layout",
+      "city": "bangalore",
+      "email": "amarraju@gmail.com",
+      "id": 3
+    }
+  ],
+  "guarantors": [
+    {
+      "season_id": "2",
+      "season_land_village_id": "2",
+      "person_id": "3",
+      "id": 1,
+      "season_Farmers_id": "1"
+    },
+    {
+      "season_id": "2",
+      "season_Farmers_id": "1",
+      "season_land_village_id": "2",
+      "person_id": "3",
+      "id": 2
     }
   ]
 }

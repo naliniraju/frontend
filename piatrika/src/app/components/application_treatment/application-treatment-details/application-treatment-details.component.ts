@@ -52,20 +52,7 @@ export class ApplicationTreatmentDetailsComponent implements OnInit {
     this.location.back();
 
 }
-onFileSelect(event) {
-  if (event.target.files.length > 0) {
-    const file = event.target.files[0].path;
-   // this.uploadForm.get('ryot_photo').setValue(file);
-  }
-  // const formData = new FormData();
-  // formData.append('file', this.uploadForm.get('ryot_photo').value);
 
-  // this.http.post<any>(this.piatrikaUrl, formData).subscribe(
-  //   (res) => console.log(res),
-  //   (err) => console.log(err)
-  // );
-  
-}
 
 }
 

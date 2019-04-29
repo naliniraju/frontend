@@ -21,18 +21,19 @@ export class AddFarmersComponent implements OnInit {
   farmers: Farmer[];
   uploadForm: FormGroup;
   villages: Village[];
-  
+  url: string | ArrayBuffer;
+
   private piatrikaUrl = 'http://localhost:3000/farmers';
-  
+
   constructor(
     private farmerService: FarmersService,
-    private villageService:VillageService,
+    private villageService: VillageService,
     private router: Router,
-    private location:Location,
+    private location: Location,
     private http: HttpClient
   ) { }
   ngOnInit() {
-    this.villageService.getVillageDetails().subscribe(data=>this.villages=data);
+    this.villageService.getVillageDetails().subscribe(data => this.villages = data);
 
   }
   newFarmer(): void {
@@ -64,17 +65,16 @@ export class AddFarmersComponent implements OnInit {
       );
   }
   onFileSelect(event) {
-    if (event.target.files.length > 0) {
-      const file = event.target.files[0].path;
-     // this.uploadForm.get('ryot_photo').setValue(file);
-    }
-    // const formData = new FormData();
-    // formData.append('file', this.uploadForm.get('ryot_photo').value);
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
+      reader.readAsDataURL(event.target.files[0]);//read file as data url
 
-    // this.http.post<any>(this.piatrikaUrl, formData).subscribe(
-    //   (res) => console.log(res),
-    //   (err) => console.log(err)
-    // );
+      reader.onload = (event) => {//called once readAsDataURL is completed
+        // this.url=event.target.result;
+        this.url = reader.result;
+      }
+    }
+
   }
 
 }

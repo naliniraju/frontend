@@ -24,6 +24,21 @@ import { ApplicationTreatmentDetailsComponent } from './components/application_t
 import { SeasonComponent } from './components/season/season/season.component';
 import { AddSeasonComponent } from './components/season/add-season/add-season.component';
 import { SeasonDetailsComponent } from './components/season/season-details/season-details.component';
+import { AddLoanComponent } from './components/loan/add-loan/add-loan.component';
+import { LoanComponent } from './components/loan/loan/loan.component';
+import { LoanDetailsComponent } from './components/loan/loan-details/loan-details.component';
+import { BankComponent } from './components/bank/bank/bank.component';
+import { AddBankComponent } from './components/bank/add-bank/add-bank.component';
+import { BankDetailsComponent } from './components/bank/bank-details/bank-details.component';
+import { FarmerBankDetailsComponent } from './components/farmer_bank/farmer-bank-details/farmer-bank-details.component';
+import { FarmerBankComponent } from './components/farmer_bank/farmer-bank/farmer-bank.component';
+import { AddFarmerBankComponent } from './components/farmer_bank/add-farmer-bank/add-farmer-bank.component';
+import { PersonComponent } from './components/person/person/person.component';
+import { AddPersonComponent } from './components/person/add-person/add-person.component';
+import { PersonDetailsComponent } from './components/person/person-details/person-details.component';
+import { GuarantorComponent } from './components/guarantor/guarantor/guarantor.component';
+import { GuarantorDetailsComponent } from './components/guarantor/guarantor-details/guarantor-details.component';
+import { AddGuarantorComponent } from './components/guarantor/add-guarantor/add-guarantor.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +61,22 @@ import { SeasonDetailsComponent } from './components/season/season-details/seaso
     ApplicationTreatmentDetailsComponent,
     SeasonComponent,
     AddSeasonComponent,
-    SeasonDetailsComponent
+    SeasonDetailsComponent,
+    AddLoanComponent,
+    LoanComponent,
+    LoanDetailsComponent,
+    BankComponent,
+    AddBankComponent,
+    BankDetailsComponent,
+    FarmerBankDetailsComponent,
+    FarmerBankComponent,
+    AddFarmerBankComponent,
+    PersonComponent,
+    AddPersonComponent,
+    PersonDetailsComponent,
+    GuarantorComponent,
+    GuarantorDetailsComponent,
+    AddGuarantorComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@
   
       <div class="form-group col-md-6">
         <label for="rno">RNO</label>
-        <input type="text" class="form-control" id="rno" placeholder="Enter rno" required [(ngModel)]="farmer.rno"
+        <input type="text" class="form-control" id="rno" placeholder="Enter rno" required maxlength="45" [(ngModel)]="farmer.rno"
           name="rno" #rno="ngModel">
         <div [hidden]="rno.valid || rno.pristine" class="alert alert-danger">
           RNO is required
@@ -20,7 +20,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="sysno">SysNo</label>
-        <input type="text" class="form-control" id="sysno" placeholder="Enter sysno" required [(ngModel)]="farmer.sysno"
+        <input type="text" class="form-control" id="sysno" placeholder="Enter sysno" required maxlength="45" [(ngModel)]="farmer.sysno"
           name="sysno" #sysno="ngModel">
         <div [hidden]="sysno.valid || sysno.pristine" class="alert alert-danger">
           SysNo is required
@@ -36,7 +36,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="csi_name">CSI_Name</label>
-        <input type="text" class="form-control" id="csi_name" placeholder="Enter csi_name" required
+        <input type="text" class="form-control" id="csi_name" placeholder="Enter csi_name" required maxlength="45"
           [(ngModel)]="farmer.csi_name" name="csi_name" #csi_name="ngModel">
         <div [hidden]="csi_name.valid || csi_name.pristine" class="alert alert-danger">
           CSI_Name is required
@@ -44,7 +44,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="litrary_status">Litrary_Status</label>
-        <input type="text" class="form-control" id="litrary_status" placeholder="Enter litrary_status" required
+        <input type="text" class="form-control" id="litrary_status" placeholder="Enter litrary_status" required maxlength="45"
           [(ngModel)]="farmer.litrary_status" name="litrary_status" #litrary_status="ngModel">
         <div [hidden]="litrary_status.valid || litrary_status.pristine" class="alert alert-danger">
           Litrary_Status is required
@@ -52,7 +52,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="City">City</label>
-        <input type="text" class="form-control" id="City" placeholder="Enter City" required 
+        <input type="text" class="form-control" id="City" placeholder="Enter City" required maxlength="45" 
         [(ngModel)]="farmer.City"
           name="City" #City="ngModel">
         <div [hidden]="City.valid || City.pristine" class="alert alert-danger">

@@ -12,7 +12,7 @@
 
     <div class="form-group col-md-6">
       <label for="village_name">Village_Name</label>
-      <input type="text" class="form-control" id="village_name" placeholder="Enter village_name" required
+      <input type="text" class="form-control" id="village_name" placeholder="Enter village_name" required maxlength="45"
         [(ngModel)]="village.village_name" name="village_name" #village_name="ngModel">
       <div [hidden]="village_name.valid || village_name.pristine" class="alert alert-danger">
         Village_Name is required
@@ -20,7 +20,7 @@
     </div>
     <div class="form-group col-md-6">
       <label for="village_code">Village_Code</label>
-      <input type="text" class="form-control" id="village_code" placeholder="Enter village_code" required
+      <input type="text" class="form-control" id="village_code" placeholder="Enter village_code" required maxlength="45"
         [(ngModel)]="village.village_code" name="village_code" #village_code="ngModel">
       <div [hidden]="village_code.valid || village_code.pristine" class="alert alert-danger">
         Village_Code is required

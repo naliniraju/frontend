@@ -17,6 +17,24 @@ import { AddLandVillageComponent } from 'src/app/components/land_village/add-lan
 import { ApplicationTreatmentComponent } from 'src/app/components/application_treatment/application-treatment/application-treatment.component';
 import { ApplicationTreatmentDetailsComponent } from 'src/app/components/application_treatment/application-treatment-details/application-treatment-details.component';
 import { AddApplicationTreatmentComponent } from 'src/app/components/application_treatment/add-application-treatment/add-application-treatment.component';
+import { SeasonComponent } from 'src/app/components/season/season/season.component';
+import { AddSeasonComponent } from 'src/app/components/season/add-season/add-season.component';
+import { SeasonDetailsComponent } from 'src/app/components/season/season-details/season-details.component';
+import { LoanComponent } from 'src/app/components/loan/loan/loan.component';
+import { AddLoanComponent } from 'src/app/components/loan/add-loan/add-loan.component';
+import { LoanDetailsComponent } from 'src/app/components/loan/loan-details/loan-details.component';
+import { BankComponent } from 'src/app/components/bank/bank/bank.component';
+import { AddBankComponent } from 'src/app/components/bank/add-bank/add-bank.component';
+import { BankDetailsComponent } from 'src/app/components/bank/bank-details/bank-details.component';
+import { FarmerBankDetailsComponent } from 'src/app/components/farmer_bank/farmer-bank-details/farmer-bank-details.component';
+import { FarmerBankComponent } from 'src/app/components/farmer_bank/farmer-bank/farmer-bank.component';
+import { AddFarmerBankComponent } from 'src/app/components/farmer_bank/add-farmer-bank/add-farmer-bank.component';
+import { PersonComponent } from 'src/app/components/person/person/person.component';
+import { AddPersonComponent } from 'src/app/components/person/add-person/add-person.component';
+import { PersonDetailsComponent } from 'src/app/components/person/person-details/person-details.component';
+import { GuarantorComponent } from 'src/app/components/guarantor/guarantor/guarantor.component';
+import { AddGuarantorComponent } from 'src/app/components/guarantor/add-guarantor/add-guarantor.component';
+import { GuarantorDetailsComponent } from 'src/app/components/guarantor/guarantor-details/guarantor-details.component';
 
 const routes: Routes = [
   {
@@ -87,6 +105,78 @@ const routes: Routes = [
   {
     path: 'applicationtreatments/:id',
     component: ApplicationTreatmentDetailsComponent
+  },
+  {
+    path: 'seasons',
+    component: SeasonComponent
+  },
+  {
+    path: 'season/add',
+    component: AddSeasonComponent
+  },
+  {
+    path: 'seasons/:id',
+    component: SeasonDetailsComponent
+  },
+  {
+    path: 'loans',
+    component: LoanComponent
+  },
+  {
+    path: 'loan/add',
+    component: AddLoanComponent
+  },
+  {
+    path: 'loans/:id',
+    component: LoanDetailsComponent
+  },
+  {
+    path: 'banks',
+    component: BankComponent
+  },
+  {
+    path: 'bank/add',
+    component: AddBankComponent
+  },
+  {
+    path: 'banks/:id',
+    component: BankDetailsComponent
+  },
+  {
+    path: 'farmerbanks',
+    component: FarmerBankComponent
+  },
+  {
+    path: 'farmerbank/add',
+    component: AddFarmerBankComponent
+  },
+  {
+    path: 'farmerbanks/:id',
+    component: FarmerBankDetailsComponent
+  },
+  {
+    path: 'persons',
+    component: PersonComponent
+  },
+  {
+    path: 'person/add',
+    component: AddPersonComponent
+  },
+  {
+    path: 'persons/:id',
+    component: PersonDetailsComponent
+  },
+  {
+    path: 'guarantors',
+    component: GuarantorComponent
+  },
+  {
+    path: 'guarantor/add',
+    component: AddGuarantorComponent
+  },
+  {
+    path: 'guarantors/:id',
+    component: GuarantorDetailsComponent
   },
 
 ];
