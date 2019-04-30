@@ -106,7 +106,7 @@ import { AddVarietyComponent } from './components/variety/add-variety/add-variet
     AddCropComponent,
     VarietyDetailsComponent,
     VarietyComponent,
-    AddVarietyComponent
+    AddVarietyComponent,
   ],
   imports: [
     BrowserModule,

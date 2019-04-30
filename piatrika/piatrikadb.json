@@ -125,18 +125,6 @@
       "City": "Cty-4",
       "person_id": 4,
       "id": 4
-    },
-    {
-      "csi_code": 1,
-      "rno": "kjkh",
-      "sysno": "hjhjh",
-      "village_id": "7",
-      "csi_name": "hjkh",
-      "litrary_status": "hjhjkh",
-      "City": "hkjhkjhkjh",
-      "person_id": 3,
-      "ryot_photo": "C:\\fakepath\\Screenshot (1).png",
-      "id": 5
     }
   ],
   "landvillages": [
