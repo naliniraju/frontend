@@ -35,6 +35,21 @@ import { PersonDetailsComponent } from 'src/app/components/person/person-details
 import { GuarantorComponent } from 'src/app/components/guarantor/guarantor/guarantor.component';
 import { AddGuarantorComponent } from 'src/app/components/guarantor/add-guarantor/add-guarantor.component';
 import { GuarantorDetailsComponent } from 'src/app/components/guarantor/guarantor-details/guarantor-details.component';
+import { FarmerRelationsComponent } from 'src/app/components/farmer_relations/farmer-relations/farmer-relations.component';
+import { AddFarmerRelationsComponent } from 'src/app/components/farmer_relations/add-farmer-relations/add-farmer-relations.component';
+import { FarmerRelationsDetailsComponent } from 'src/app/components/farmer_relations/farmer-relations-details/farmer-relations-details.component';
+import { PhoneComponent } from 'src/app/components/phone/phone/phone.component';
+import { AddPhoneComponent } from 'src/app/components/phone/add-phone/add-phone.component';
+import { PhoneDetailsComponent } from 'src/app/components/phone/phone-details/phone-details.component';
+import { PlotVisitComponent } from 'src/app/components/plot_visit/plot-visit/plot-visit.component';
+import { AddPlotVisitComponent } from 'src/app/components/plot_visit/add-plot-visit/add-plot-visit.component';
+import { PlotVisitDetailsComponent } from 'src/app/components/plot_visit/plot-visit-details/plot-visit-details.component';
+import { CropComponent } from 'src/app/components/crop/crop/crop.component';
+import { AddCropComponent } from 'src/app/components/crop/add-crop/add-crop.component';
+import { CropDetailsComponent } from 'src/app/components/crop/crop-details/crop-details.component';
+import { VarietyComponent } from 'src/app/components/variety/variety/variety.component';
+import { AddVarietyComponent } from 'src/app/components/variety/add-variety/add-variety.component';
+import { VarietyDetailsComponent } from 'src/app/components/variety/variety-details/variety-details.component';
 
 const routes: Routes = [
   {
@@ -177,6 +192,66 @@ const routes: Routes = [
   {
     path: 'guarantors/:id',
     component: GuarantorDetailsComponent
+  },
+  {
+    path: 'farmerrelations',
+    component: FarmerRelationsComponent
+  },
+  {
+    path: 'farmerrelation/add',
+    component: AddFarmerRelationsComponent
+  },
+  {
+    path: 'farmerrelations/:id',
+    component: FarmerRelationsDetailsComponent
+  },
+  {
+    path: 'phones',
+    component: PhoneComponent
+  },
+  {
+    path: 'phone/add',
+    component: AddPhoneComponent
+  },
+  {
+    path: 'phones/:id',
+    component: PhoneDetailsComponent
+  },
+  {
+    path: 'plotvisits',
+    component: PlotVisitComponent
+  },
+  {
+    path: 'plotvisit/add',
+    component: AddPlotVisitComponent
+  },
+  {
+    path: 'plotvisits/:id',
+    component: PlotVisitDetailsComponent
+  },
+  {
+    path: 'crops',
+    component: CropComponent
+  },
+  {
+    path: 'crop/add',
+    component: AddCropComponent
+  },
+  {
+    path: 'crops/:id',
+    component: CropDetailsComponent
+  },
+  {
+    path: 'varietees',
+    component: VarietyComponent
+  },
+  {
+    path: 'varietee/add',
+    component: AddVarietyComponent
+  },
+  {
+    path: 'varietees/:id',
+    component: VarietyDetailsComponent
   },
 
 ];

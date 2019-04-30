@@ -39,6 +39,21 @@ import { PersonDetailsComponent } from './components/person/person-details/perso
 import { GuarantorComponent } from './components/guarantor/guarantor/guarantor.component';
 import { GuarantorDetailsComponent } from './components/guarantor/guarantor-details/guarantor-details.component';
 import { AddGuarantorComponent } from './components/guarantor/add-guarantor/add-guarantor.component';
+import { FarmerRelationsComponent } from './components/farmer_relations/farmer-relations/farmer-relations.component';
+import { AddFarmerRelationsComponent } from './components/farmer_relations/add-farmer-relations/add-farmer-relations.component';
+import { FarmerRelationsDetailsComponent } from './components/farmer_relations/farmer-relations-details/farmer-relations-details.component';
+import { PhoneComponent } from './components/phone/phone/phone.component';
+import { PhoneDetailsComponent } from './components/phone/phone-details/phone-details.component';
+import { AddPhoneComponent } from './components/phone/add-phone/add-phone.component';
+import { PlotVisitComponent } from './components/plot_visit/plot-visit/plot-visit.component';
+import { AddPlotVisitComponent } from './components/plot_visit/add-plot-visit/add-plot-visit.component';
+import { PlotVisitDetailsComponent } from './components/plot_visit/plot-visit-details/plot-visit-details.component';
+import { CropComponent } from './components/crop/crop/crop.component';
+import { CropDetailsComponent } from './components/crop/crop-details/crop-details.component';
+import { AddCropComponent } from './components/crop/add-crop/add-crop.component';
+import { VarietyDetailsComponent } from './components/variety/variety-details/variety-details.component';
+import { VarietyComponent } from './components/variety/variety/variety.component';
+import { AddVarietyComponent } from './components/variety/add-variety/add-variety.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +91,22 @@ import { AddGuarantorComponent } from './components/guarantor/add-guarantor/add-
     PersonDetailsComponent,
     GuarantorComponent,
     GuarantorDetailsComponent,
-    AddGuarantorComponent
+    AddGuarantorComponent,
+    FarmerRelationsComponent,
+    AddFarmerRelationsComponent,
+    FarmerRelationsDetailsComponent,
+    PhoneComponent,
+    PhoneDetailsComponent,
+    AddPhoneComponent,
+    PlotVisitComponent,
+    AddPlotVisitComponent,
+    PlotVisitDetailsComponent,
+    CropComponent,
+    CropDetailsComponent,
+    AddCropComponent,
+    VarietyDetailsComponent,
+    VarietyComponent,
+    AddVarietyComponent
   ],
   imports: [
     BrowserModule,

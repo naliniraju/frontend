@@ -377,5 +377,127 @@
       "person_id": "3",
       "id": 2
     }
+  ],
+  "farmerrelations": [
+    {
+      "related_to_csi": "rtc-1",
+      "relationship_type": "rt-1",
+      "person_id": "3",
+      "id": 1
+    },
+    {
+      "related_to_csi": "rtc-2",
+      "relationship_type": "rt-2",
+      "person_id": "1",
+      "id": 2
+    },
+    {
+      "related_to_csi": "rtc-3",
+      "relationship_type": "rt-3",
+      "person_id": "2",
+      "id": 3
+    }
+  ],
+  "phones": [
+    {
+      "phone_type": "Airtel",
+      "number": "+91-7760546432",
+      "person_id": "1",
+      "id": 1
+    },
+    {
+      "phone_type": "Vodafone",
+      "number": "+91-7684567890",
+      "person_id": "2",
+      "id": 2
+    },
+    {
+      "phone_type": "Jio",
+      "number": "+91-6543218907",
+      "person_id": "3",
+      "id": 3
+    }
+  ],
+  "plotvisits": [
+    {
+      "condition": "cnd-1",
+      "identification": "id-1",
+      "advice_given": "ag-1",
+      "season_id": "1",
+      "id": 1,
+      "timestamp": "2019-04-30"
+    },
+    {
+      "condition": "cnd-2",
+      "identification": "id-2",
+      "advice_given": "ag-2",
+      "season_id": "2",
+      "id": 2,
+      "timestamp": "2019-04-30"
+    },
+    {
+      "condition": "cnd-3",
+      "identification": "id-3",
+      "advice_given": "ag-3",
+      "season_id": "1",
+      "id": 3,
+      "timestamp": "2019-04-30"
+    },
+    {
+      "condition": "uyuiyiy",
+      "identification": "uyiuy",
+      "advice_given": "iuyuy",
+      "season_id": "2",
+      "timestamp": "2019-04-30",
+      "id": 4
+    }
+  ],
+  "crops": [
+    {
+      "crop_name": "cn-1",
+      "crop_scientific_name": "csn-1",
+      "id": 1
+    },
+    {
+      "crop_name": "cn-2",
+      "crop_scientific_name": "csn-2",
+      "id": 2
+    },
+    {
+      "crop_name": "cn-3",
+      "crop_scientific_name": "csn-3",
+      "id": 3
+    },
+    {
+      "crop_name": "cn-4",
+      "crop_scientific_name": "csn-4",
+      "id": 4
+    }
+  ],
+  "varietees": [
+    {
+      "variety": "v-1",
+      "variety_scientific_name": "vsn-1",
+      "crop_id": "3",
+      "id": 1
+    },
+    {
+      "variety": "v-2",
+      "variety_scientific_name": "vsn-2",
+      "crop_id": "4",
+      "id": 2
+    },
+    {
+      "variety": "v3",
+      "variety_scientific_name": "vsn-3",
+      "crop_id": "1",
+      "id": 3
+    },
+    {
+      "variety": "v-4",
+      "variety_scientific_name": "vsn-4",
+      "crop_id": "2",
+      "id": 4
+    }
   ]
 }
