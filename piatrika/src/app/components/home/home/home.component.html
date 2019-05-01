@@ -1,5 +1,22 @@
    <div class="row">
-    <div class="col-md-3 mycolspan"> <a class="btn btn-primary"
+        <a *ngFor="let hero of heroes" routerLink="/{{hero.name}}"> <div class="col-md-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title text-center">
+                      {{hero.name|uppercase}}
+                     </h3>
+                  </div>
+                  <div class="panel-body">
+                    <img src="assets/piatrika-logo.png">
+                                      </div>
+                  <div class="panel-footer">
+                  
+                    <div class="clearfix">
+                    </div>
+                  </div>
+                </div>
+              </div></a>
+    <!-- <div class="col-md-3 mycolspan"> <a class="btn btn-primary"
         routerLink="/farmers">FarmersData</a>
     </div>
     <div class="col-md-3 mycolspan"> <a class="btn btn-primary"
@@ -46,5 +63,32 @@
     </div>
     <div class="col-md-3 mycolspan"> <a class="btn btn-primary"
         routerLink="/varietees">VarietyData </a>
-    </div>
+    </div> -->
   </div>
+  <!-- <h1 style="background-color: yellowgreen;"> Your current location is:{{lat}},{{lng}} <h1>
+    <agm-map style="height:500px" [zoom]='19' [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map> -->
+
+
+<!-- app.component.html -->
+<div class="container">
+ 
+  <h1>Angular Google Maps with Places Search Example</h1>
+ 
+  <div class="form-group">
+    <label>Enter address</label>
+    <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+  </div>
+ 
+  <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
+      (dragEnd)="markerDragEnd($event)"></agm-marker>
+  </agm-map>
+ 
+  <h5>Address: {{address}}</h5>
+  <div>Latitude: {{latitude}}</div>
+  <div>Longitude: {{longitude}}</div>
+</div>
+
+    

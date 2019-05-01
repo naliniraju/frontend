@@ -115,7 +115,9 @@
     color: #fff;
     background: none;
 }
-
+.navbar-inverse .navbar-toggle {
+    right:10px;
+}
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
@@ -146,7 +148,11 @@
     #mymenutoggle{
     margin-left:-80px;
     margin-top:-10px;
-}
+    }
+    .navbar-brand>img{
+        margin-top:-13px;
+        margin-left:0px;left:0px;
+    }
 
 }
 
@@ -155,7 +161,12 @@
     #mymenutoggle{
     margin-left:-55px;
     margin-top:-10px;
-}
+    }
+    
+    .navbar-brand>img{
+        margin-top:-13px;
+        margin-left:0px;left:0px;
+    }
 
 }
   .btn-custom {

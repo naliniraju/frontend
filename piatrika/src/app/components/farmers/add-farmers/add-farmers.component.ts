@@ -22,6 +22,7 @@ export class AddFarmersComponent implements OnInit {
   uploadForm: FormGroup;
   villages: Village[];
   url: string | ArrayBuffer;
+  
 
   private piatrikaUrl = 'http://localhost:3000/farmers';
 
@@ -31,7 +32,8 @@ export class AddFarmersComponent implements OnInit {
     private router: Router,
     private location: Location,
     private http: HttpClient
-  ) { }
+  ) { 
+     }
   ngOnInit() {
     this.villageService.getVillageDetails().subscribe(data => this.villages = data);
 

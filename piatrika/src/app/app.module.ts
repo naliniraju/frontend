@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { AddFarmersComponent } from './components/farmers/add-farmers/add-farmers.component';
@@ -114,6 +115,17 @@ import { AddVarietyComponent } from './components/variety/add-variety/add-variet
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyCSIFuXPQXel1splGkx5ElXoU1bL60Jn-I'
+    // }),
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyAfJTVKnpLl0ULuuwDuix-9ANpyQhP6mfc',
+       libraries: ["places"]
+   })
+  // AgmCoreModule.forRoot({
+  //   apiKey: 'AIzaSyAzSnXXXXXXXXXXXXXXXXXSZGGWU',
+  //   libraries: ['places']
+  // })
   ],
   providers: [],
   bootstrap: [AppComponent]
