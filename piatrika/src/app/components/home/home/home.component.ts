@@ -6,7 +6,7 @@ import { MapsAPILoader, MouseEvent } from '@agm/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  heroes = [{name:'farmers'},{name:'villages'},{name:'divisions'},
+  heroes = [{name:'farmers'},{name:'villages'},{name:'divisionmodels'},
   {name:'landvillages'},{name:'applicationtreatments'},{name:'seasons'},
   {name:'loans'},{name:'banks'},{name:'farmerbanks'},
   {name:'persons'},{name:'gurantors'},{name:'farmerrelations'},
