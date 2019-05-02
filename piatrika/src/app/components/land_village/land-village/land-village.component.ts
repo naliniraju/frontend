@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LandVillage } from 'src/app/models/land-village';
 import { LandVillageService } from 'src/app/services/land_village/land-village.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-land-village',
@@ -15,7 +16,7 @@ export class LandVillageComponent implements OnInit {
   message: string;
   landvillages: LandVillage[];
 
-  constructor(private landvillageService: LandVillageService, private http: HttpClient) { }
+  constructor(private landvillageService: LandVillageService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getLandVillageDetails();
@@ -43,6 +44,9 @@ export class LandVillageComponent implements OnInit {
         }, error => console.log(error));
 
     }
+  }
+  goBack(){
+    this.router.navigateByUrl('landvillage/add');
   }
 
 }

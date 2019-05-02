@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { PlotVisit } from 'src/app/models/plot-visit';
 import { PlotVisitService } from 'src/app/services/plot_visit/plot-visit.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-plot-visit',
@@ -15,7 +16,7 @@ export class PlotVisitComponent implements OnInit {
   message: string;
   plotvisits: PlotVisit[];
 
-  constructor(private plotvisitService: PlotVisitService, private http: HttpClient) { }
+  constructor(private plotvisitService: PlotVisitService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getPlotVisitDetails();
@@ -44,7 +45,9 @@ export class PlotVisitComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('plotvisit/add');
+  }
 }
 
 

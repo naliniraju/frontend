@@ -52,7 +52,8 @@ export class AddFarmerBankComponent implements OnInit {
     this.farmerbankService.addFarmerBankDetail(this.farmerbank)
       .subscribe();
     this.getFarmerBankDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/farmerbanks');
   }
 
   getFarmerBankDetails() {

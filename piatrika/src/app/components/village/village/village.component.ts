@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Village } from 'src/app/models/village';
 import { VillageService } from 'src/app/services/village/village.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-village',
@@ -15,7 +16,7 @@ export class VillageComponent implements OnInit {
   message: string;
   villages: Village[];
 
-  constructor(private villageService: VillageService, private http: HttpClient) { }
+  constructor(private villageService: VillageService, private http: HttpClient,private router:Router) { }
 
   ngOnInit(): void {
     this.getVillageDetails();
@@ -44,6 +45,8 @@ export class VillageComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('village/add');
+  }
 }
 

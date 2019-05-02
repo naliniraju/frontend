@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Variety } from 'src/app/models/variety';
 import { VarietyService } from 'src/app/services/variety/variety.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-variety',
@@ -15,7 +16,7 @@ export class VarietyComponent implements OnInit {
   message: string;
   varietees: Variety[];
 
-  constructor(private varieteeService: VarietyService, private http: HttpClient) { }
+  constructor(private varieteeService: VarietyService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getVarietyDetails();
@@ -43,6 +44,9 @@ export class VarietyComponent implements OnInit {
         }, error => console.log(error));
 
     }
+  }
+  goBack(){
+    this.router.navigateByUrl('varietee/add');
   }
 
 }

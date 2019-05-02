@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Crop } from 'src/app/models/crop';
 import { CropService } from 'src/app/services/crop/crop.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crop',
@@ -15,7 +16,7 @@ export class CropComponent implements OnInit {
   message: string;
   crops: Crop[];
 
- constructor(private cropService:CropService,private http: HttpClient) {}
+ constructor(private cropService:CropService,private http: HttpClient,private router: Router) {}
 
  ngOnInit(): void {
    this.getCropDetails();
@@ -44,6 +45,9 @@ export class CropComponent implements OnInit {
                     
                                }
                              }
+                             goBack(){
+                              this.router.navigateByUrl('crop/add');
+                            }
 
 }
 

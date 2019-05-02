@@ -39,8 +39,8 @@ export class AddPersonComponent implements OnInit {
     this.personService.addPersonDetail(this.person)
       .subscribe();
     this.getPersonDetails();
-    //this.router.navigate(['/person/add']);
-    this.location.back();
+    this.router.navigate(['/persons']);
+    //this.location.back();
   }
 
   getPersonDetails() {

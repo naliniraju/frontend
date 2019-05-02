@@ -51,7 +51,8 @@ export class AddGuarantorComponent implements OnInit {
     this.guarantorService.addGuarantorDetail(this.guarantor)
       .subscribe();
     this.getGuarantorDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/guarantors');
   }
 
   getGuarantorDetails() {

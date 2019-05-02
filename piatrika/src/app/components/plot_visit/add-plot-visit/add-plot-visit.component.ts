@@ -46,7 +46,8 @@ export class AddPlotVisitComponent implements OnInit {
     this.plotvisitService.addPlotVisitDetail(this.plotvisit)
       .subscribe();
     this.getPlotVisitDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/plotvisits');
   }
 
   getPlotVisitDetails() {

@@ -39,8 +39,8 @@ export class AddDivisionSectionComponent implements OnInit {
     this.divisionsectionService.addDivisionDetail(this.divisionmodel)
       .subscribe();
     this.getDivisionDetails();
-    //this.router.navigate(['/divisionmodel/add']);
-    this.location.back();
+    this.router.navigate(['/divisionmodels']);
+    //this.location.back();
   }
 
   getDivisionDetails() {

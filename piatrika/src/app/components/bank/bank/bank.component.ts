@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Bank } from 'src/app/models/bank';
 import { BankService } from 'src/app/services/bank/bank.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bank',
@@ -14,7 +15,7 @@ export class BankComponent implements OnInit {
   message: string;
   banks: Bank[];
 
- constructor(private bankService:BankService,private http: HttpClient) {}
+ constructor(private bankService:BankService,private http: HttpClient,private router:Router) {}
 
  ngOnInit(): void {
    this.getDivisionDetails();
@@ -43,6 +44,9 @@ export class BankComponent implements OnInit {
                     
                                }
                              }
+                             goBack(){
+                              this.router.navigateByUrl('bank/add');
+                            }
 
 }
 

@@ -53,7 +53,8 @@ export class AddSeasonComponent implements OnInit {
     this.seasonService.addSeasonDetail(this.season)
       .subscribe();
     this.getSeasonDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/seasons');
   }
 
   getSeasonDetails() {

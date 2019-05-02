@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DivisionModel } from 'src/app/models/division-model';
 import { DivisionSectionService } from 'src/app/services/division_section/division-section.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-division-section',
@@ -15,7 +16,7 @@ export class DivisionSectionComponent implements OnInit {
   message: string;
   divisionmodels: DivisionModel[];
 
- constructor(private divisiondetailService:DivisionSectionService,private http: HttpClient) {}
+ constructor(private divisiondetailService:DivisionSectionService,private http: HttpClient,private router: Router) {}
 
  ngOnInit(): void {
    this.getDivisionDetails();
@@ -44,6 +45,9 @@ export class DivisionSectionComponent implements OnInit {
                     
                                }
                              }
+                             goBack(){
+                              this.router.navigateByUrl('divisionmodel/add');
+                            }
 
 }
 

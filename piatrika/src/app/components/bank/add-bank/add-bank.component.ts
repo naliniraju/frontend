@@ -40,7 +40,8 @@ export class AddBankComponent implements OnInit {
     this.bankService.addBankDetail(this.mybank)
       .subscribe();
     this.getBankDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/banks');
   }
 
   getBankDetails() {
@@ -52,5 +53,5 @@ export class AddBankComponent implements OnInit {
         }
       );
   }
-
+ 
 }

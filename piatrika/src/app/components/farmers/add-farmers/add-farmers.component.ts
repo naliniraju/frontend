@@ -56,7 +56,7 @@ export class AddFarmersComponent implements OnInit {
     this.farmerService.addFarmerDetail(this.farmer)
       .subscribe();
     this.getFarmerDetails();
-    //this.router.navigate(['/farmer/add']);
+    this.router.navigate(['/farmers']);
     // this.location.back();
   }
 

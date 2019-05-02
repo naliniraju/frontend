@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Farmer } from 'src/app/models/farmer';
 import { HttpClient } from '@angular/common/http';
 import { FarmersService } from 'src/app/services/farmers/farmers.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-farmers',
@@ -16,7 +17,7 @@ export class FarmersComponent implements OnInit {
   message: string;
   farmers: Farmer[];
 
-  constructor(private farmerService: FarmersService, private http: HttpClient) { }
+  constructor(private farmerService: FarmersService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getFarmerDetails();
@@ -45,5 +46,7 @@ export class FarmersComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('farmer/add');
+  }
 }

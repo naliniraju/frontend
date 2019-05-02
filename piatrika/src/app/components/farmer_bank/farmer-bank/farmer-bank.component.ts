@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FarmerBank } from 'src/app/models/farmer-bank';
 import { FarmerBankService } from 'src/app/services/farmer_bank/farmer-bank.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-farmer-bank',
@@ -16,7 +18,7 @@ export class FarmerBankComponent implements OnInit {
   message: string;
   farmerbanks: FarmerBank[];
 
-  constructor(private farmerbankService: FarmerBankService, private http: HttpClient) { }
+  constructor(private farmerbankService: FarmerBankService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getFarmerBankDetails();
@@ -28,7 +30,7 @@ export class FarmerBankComponent implements OnInit {
       .subscribe(
         farmerbanks => {
           console.log(farmerbanks);
-          this.farmerbanks = farmerbanks
+          this.farmerbanks = farmerbanks;
         }
       );
   }
@@ -45,5 +47,7 @@ export class FarmerBankComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('farmerbank/add');
+  }
 }

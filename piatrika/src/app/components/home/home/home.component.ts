@@ -6,31 +6,13 @@ import { MapsAPILoader, MouseEvent } from '@agm/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  heroes = [{name:'farmers'},{name:'villages'},{name:'divisions'},
+  heroes = [{name:'farmers'},{name:'villages'},{name:'divisionmodels'},
   {name:'landvillages'},{name:'applicationtreatments'},{name:'seasons'},
   {name:'loans'},{name:'banks'},{name:'farmerbanks'},
   {name:'persons'},{name:'gurantors'},{name:'farmerrelations'},
   {name:'phones'},{name:'plotvisits'},{name:'crops'}
 ];
-
-  
-  // lng: any;
-  // lat: any;
-
-  // constructor() {
-  //   if (navigator)
-  //   {
-  //   navigator.geolocation.getCurrentPosition( pos => {
-  //       this.lng = +pos.coords.longitude;
-  //       this.lat = +pos.coords.latitude;
-  //     });
-  //   }
-    
-  //  }
-
-  // ngOnInit() {
-  // }
-  title: string = 'AGM project';
+ 
   latitude: number;
   longitude: number;
   zoom: number;

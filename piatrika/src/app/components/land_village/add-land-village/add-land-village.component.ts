@@ -45,7 +45,8 @@ export class AddLandVillageComponent implements OnInit {
     this.landvillageService.addLandVillageDetail(this.landvillage)
       .subscribe();
     this.getLandVillageDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/landvillages');
   }
 
   getLandVillageDetails() {

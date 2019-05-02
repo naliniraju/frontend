@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Phone } from 'src/app/models/phone';
 import { PhoneService } from 'src/app/services/phone/phone.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-phone',
@@ -16,7 +17,7 @@ export class PhoneComponent implements OnInit {
   message: string;
   phones: Phone[];
 
-  constructor(private phoneService: PhoneService, private http: HttpClient) { }
+  constructor(private phoneService: PhoneService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getPhoneDetails();
@@ -45,6 +46,8 @@ export class PhoneComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('phone/add');
+  }
 }
 

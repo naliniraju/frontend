@@ -46,7 +46,8 @@ export class AddVillageComponent implements OnInit {
     this.villageService.addVillageDetail(this.village)
       .subscribe();
     this.getVillageDetails();
-    this.location.back();
+   // this.location.back();
+   this.router.navigateByUrl('/villages');
   }
 
   getVillageDetails() {

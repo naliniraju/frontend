@@ -46,7 +46,8 @@ export class AddPhoneComponent implements OnInit {
     this.phoneService.addPhoneDetail(this.phone)
       .subscribe();
     this.getPhoneDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/phones');
   }
 
   getPhoneDetails() {

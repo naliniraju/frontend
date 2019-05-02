@@ -46,7 +46,8 @@ export class AddApplicationTreatmentComponent implements OnInit {
     this.applicationtreatmentService.addApplicationTreatmentDetail(this.applicationtreatment)
       .subscribe();
     this.getApplicationTreatmentDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/applicationtreatments');
   }
 
   getApplicationTreatmentDetails() {

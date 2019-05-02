@@ -39,8 +39,8 @@ export class AddCropComponent implements OnInit {
     this.cropService.addCropDetail(this.crop)
       .subscribe();
     this.getCropDetails();
-    //this.router.navigate(['/crop/add']);
-    this.location.back();
+    this.router.navigate(['/crops']);
+    //this.location.back();
   }
 
   getCropDetails() {

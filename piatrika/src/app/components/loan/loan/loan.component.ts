@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Loan } from 'src/app/models/loan';
 import { LoanService } from 'src/app/services/loan/loan.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loan',
@@ -16,7 +17,7 @@ export class LoanComponent implements OnInit {
   message: string;
   loans: Loan[];
 
-  constructor(private loanService: LoanService, private http: HttpClient) { }
+  constructor(private loanService: LoanService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getLoanDetails();
@@ -45,6 +46,8 @@ export class LoanComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('loan/add');
+  }
 }
 

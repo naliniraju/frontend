@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApplicationTreatment } from 'src/app/models/application-treatment';
 import { ApplicationTreatmentService } from 'src/app/services/application_treatment/application-treatment.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-application-treatment',
@@ -15,7 +16,7 @@ export class ApplicationTreatmentComponent implements OnInit {
   message: string;
   applicationtreatments: ApplicationTreatment[];
 
-  constructor(private applicationtreatmentService: ApplicationTreatmentService, private http: HttpClient) { }
+  constructor(private applicationtreatmentService: ApplicationTreatmentService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getApplicationTreatmentDetails();
@@ -44,6 +45,8 @@ export class ApplicationTreatmentComponent implements OnInit {
 
     }
   }
-
+  goBack(){
+    this.router.navigateByUrl('applicationtreatment/add');
+  }
 }
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FarmerRelation } from 'src/app/models/farmer-relation';
 import { FarmerRelationsService } from 'src/app/services/farmer_relations/farmer-relations.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-farmer-relations',
@@ -16,7 +17,7 @@ export class FarmerRelationsComponent implements OnInit {
   message: string;
   farmerrelations: FarmerRelation[];
 
-  constructor(private farmerrelationService: FarmerRelationsService, private http: HttpClient) { }
+  constructor(private farmerrelationService: FarmerRelationsService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getFarmerRelationDetails();
@@ -44,6 +45,9 @@ export class FarmerRelationsComponent implements OnInit {
         }, error => console.log(error));
 
     }
+  }
+  goBack(){
+    this.router.navigateByUrl('farmerrelation/add');
   }
 
 }

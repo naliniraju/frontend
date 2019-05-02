@@ -46,7 +46,8 @@ export class AddVarietyComponent implements OnInit {
     this.varieteeService.addVarietyDetail(this.varietee)
       .subscribe();
     this.getVarietyDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/varietees');
   }
 
   getVarietyDetails() {

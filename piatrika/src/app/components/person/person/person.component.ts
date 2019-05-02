@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Person } from 'src/app/models/person';
 import { PersonService } from 'src/app/services/person/person.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-person',
@@ -15,7 +16,7 @@ export class PersonComponent implements OnInit {
   message: string;
   persons: Person[];
 
- constructor(private personService:PersonService,private http: HttpClient) {}
+ constructor(private personService:PersonService,private http: HttpClient,private router: Router) {}
 
  ngOnInit(): void {
    this.getPersonDetails();
@@ -44,6 +45,9 @@ export class PersonComponent implements OnInit {
                     
                                }
                              }
+                             goBack(){
+                              this.router.navigateByUrl('person/add');
+                            }
 
 }
 

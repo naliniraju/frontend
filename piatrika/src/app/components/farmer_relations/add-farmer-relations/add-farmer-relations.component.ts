@@ -45,7 +45,8 @@ export class AddFarmerRelationsComponent implements OnInit {
     this.farmerrelationService.addFarmerRelationDetail(this.farmerrelation)
       .subscribe();
     this.getFarmerRelationDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/farmerrelations');
   }
 
   getFarmerRelationDetails() {

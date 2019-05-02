@@ -47,7 +47,8 @@ export class AddLoanComponent implements OnInit {
     this.loanService.addLoanDetail(this.loan)
       .subscribe();
     this.getLoanDetails();
-    this.location.back();
+    //this.location.back();
+    this.router.navigateByUrl('/loans');
   }
 
   getLoanDetails() {

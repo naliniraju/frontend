@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Season } from 'src/app/models/season';
 import { SeasonService } from 'src/app/services/season/season.service';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-season',
@@ -15,7 +16,7 @@ export class SeasonComponent implements OnInit {
   message: string;
   seasons: Season[];
 
-  constructor(private seasonService: SeasonService, private http: HttpClient) { }
+  constructor(private seasonService: SeasonService, private http: HttpClient,private router: Router) { }
 
   ngOnInit(): void {
     this.getSeasonDetails();
@@ -44,4 +45,8 @@ export class SeasonComponent implements OnInit {
 
     }
   }
+  goBack(){
+    this.router.navigateByUrl('season/add');
+  }
+  
 }
