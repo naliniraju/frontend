@@ -7,6 +7,7 @@ import { FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Village } from 'src/app/models/village';
 import { VillageService } from 'src/app/services/village/village.service';
+// import LocationPicker from "location-picker";
 
 
 @Component({
@@ -22,7 +23,8 @@ export class AddFarmersComponent implements OnInit {
   uploadForm: FormGroup;
   villages: Village[];
   url: string | ArrayBuffer;
-  
+  // lp: LocationPicker;
+
 
   private piatrikaUrl = 'http://localhost:3000/farmers';
 
@@ -36,6 +38,7 @@ export class AddFarmersComponent implements OnInit {
      }
   ngOnInit() {
     this.villageService.getVillageDetails().subscribe(data => this.villages = data);
+    // this.lp = new LocationPicker('map');
 
   }
   newFarmer(): void {
@@ -54,7 +57,7 @@ export class AddFarmersComponent implements OnInit {
       .subscribe();
     this.getFarmerDetails();
     //this.router.navigate(['/farmer/add']);
-    this.location.back();
+    // this.location.back();
   }
 
   getFarmerDetails() {
@@ -68,7 +71,7 @@ export class AddFarmersComponent implements OnInit {
   }
   onFileSelect(event) {
     if (event.target.files && event.target.files[0]) {
-      var reader = new FileReader();
+      let reader = new FileReader();
       reader.readAsDataURL(event.target.files[0]);//read file as data url
 
       reader.onload = (event) => {//called once readAsDataURL is completed
@@ -78,6 +81,12 @@ export class AddFarmersComponent implements OnInit {
     }
 
   }
+//   setLocation() {
+//     console.log(this.lp.getMarkerPosition());
+    
+//  }
+ 
+ 
 
 }
 
