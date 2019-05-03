@@ -1,15 +1,17 @@
-.navbar-inverse { background-color: #008080}
-.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:active { background-color: #D2D663;border-right: 4px solid teal;}
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #D2D663;}
-.dropdown-menu { background-color: #D2D663}
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #008080}
+.navbar-inverse { background-color: #9ACD32;-webkit-box-shadow: 0px 14px 12px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 12px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 14px 12px -13px rgba(0,0,0,0.75);}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:active { background-color: green;border-right: 4px solid 9ACD32;}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: white;}
+.dropdown-menu { background-color: white}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #9ACD32}
 .navbar-inverse { background-image: none; }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
-.navbar-inverse { border-color: #222}
-.navbar-inverse .navbar-brand { color: #F7FF8A}
-.navbar-inverse .navbar-brand:hover { color: #F7FF8A}
-.navbar-inverse .navbar-nav>li>a { color: #F7FF8A;}
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color:rgb(27, 13, 4);font-weight:bold;}
+.navbar-inverse { border-color: #9ACD32}
+.navbar-inverse .navbar-brand { color: white}
+.navbar-inverse .navbar-brand:hover { color: white}
+.navbar-inverse .navbar-nav>li>a { color: white}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color:9ACD32}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
 .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
 .dropdown-menu>li>a { color: #333333}
@@ -17,13 +19,20 @@
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF} 
- 
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
 
-/*
- * Off Canvas
- * --------------------------------------------------
- */
+
+/*.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #fff;
+    background-color: #666;
+    border: 1px solid #888888;
+
+}
+
+#maincontainer{
+    margin-top:60px;
+} */
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -34,22 +43,22 @@
 
 #wrapper.toggled {
     padding-left: 250px;
-    
 }
 
 #sidebar-wrapper {
-    z-index: 1000;
     position: fixed;
     left: 250px;
+    z-index: 1000;
+    overflow-y: auto;
+    margin-left: -250px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: teal;
+    background: #9ACD32;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    overflow-x: hidden;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -57,9 +66,9 @@
 }
 
 #page-content-wrapper {
-    width: 100%;
-    position: absolute;
     padding: 15px;
+    width: 100%;
+    margin-top:60px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -72,9 +81,9 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
     margin: 0;
     padding: 0;
+    width: 250px;
     list-style: none;
 }
 
@@ -85,15 +94,15 @@
 
 .sidebar-nav li a {
     display: block;
+    color: white;
     text-decoration: none;
-    color: yellow;
-    border-bottom:1px solid #222;
+    border-bottom: 1px solid #222222;
 }
 
 .sidebar-nav li a:hover {
+    background: green;
+    color: #fff;
     text-decoration: none;
-    color: teal;
-    background: #D2D663;
 }
 
 .sidebar-nav li a:active,
@@ -108,17 +117,15 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: yellow;
+    color: #999999;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
     background: none;
+    color: #fff;
 }
-.navbar-inverse .navbar-toggle {
-    right:10px;
-}
-@media(min-width:768px) {
+
+@media (min-width: 768px) {
     #wrapper {
         padding-left: 250px;
     }
@@ -137,53 +144,27 @@
 
     #page-content-wrapper {
         padding: 20px;
-        position: relative;
     }
 
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
     }
-    
-    #mymenutoggle{
-    margin-left:-80px;
-    margin-top:-10px;
-    }
-    .navbar-brand>img{
-        margin-top:-13px;
-        margin-left:0px;left:0px;
-    }
-
 }
-
 @media(max-width:767px) {
 
-    #mymenutoggle{
-    margin-left:-55px;
-    margin-top:-10px;
-    }
-    
-    .navbar-brand>img{
-        margin-top:-13px;
-        margin-left:0px;left:0px;
+      
+    .navbar-brand1>img{
+        margin-top:2px;
     }
 
 }
-  .btn-custom {
-        color: #fff;
-        background-color: teal;
-        border-color: #222;
-    }
-    
-    .btn-custom:hover {
-        color: #fff;
-        background-color: #52bebe;
-        border-color: #222;
-    }
-    
-    .btn-custom:focus,
-    .btn-custom.focus {
-        box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+
+@media(min-width:768px) {
+
+      
+    .navbar-brand1>img{
+        margin-top:2px;
     }
 
-
+}
